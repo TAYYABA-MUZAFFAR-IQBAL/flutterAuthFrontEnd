@@ -32,7 +32,7 @@ class _MyLoginState extends State<MyLogin> {
               padding: const EdgeInsets.only(left: 35, top: 130),
               child: const Text(
                 'Welcome\nBack',
-                style: TextStyle(color: Colors.purple, fontSize: 33),
+                style: TextStyle(color: Colors.white, fontSize: 33),
               ),
             ),
             SingleChildScrollView(
@@ -176,7 +176,7 @@ class _MyLoginState extends State<MyLogin> {
       print(response.body);
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => const Home()),
+        MaterialPageRoute(builder: (context) => const AdminPage()),
       );
       Fluttertoast.showToast(
           msg: "Login Success",
